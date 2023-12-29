@@ -16,7 +16,7 @@ while True:
         message=server_socket.recv(Bytesize).decode()
         print(message)
         if(message=="S"):
-            print(f"ata mehoobar le {server_address} yaben zona")
+            print(f"ATA MEHOOBAR LE {server_address}")
             file=server_socket.recv(Bytesize).decode() 
             data=server_socket.recv(Bytesize)
             file1=open(file,'wb')
