@@ -36,7 +36,7 @@ if(message1=="R"):
     client.listen()
     client_socket, client_address= client.accept()
     os.chdir('C:\\Users\\איתי קליין\\Documents\\securefilesfolderRecive')
-    print(f"YOUR CONNECTED{client_address} YABEN SHARMUTA")
+    print(f"YOUR CONNECTED{client_address}")
     data=client_socket.recv(Bytesize)
     file1=open(name,'wb')
     file1.write(data)
